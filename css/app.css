@@ -1,0 +1,80 @@
+:root {
+  --red: #dc3545;  /*Renk tanımlama*/
+}
+
+/*! -------------- 1- NAVBAR ---------------- */
+.navbar-nav {
+  font-size: 1.2rem;
+  text-transform: uppercase; /* Bütün harfleri büyük yapar*/
+  font-weight: 600;
+}
+
+.nav-link {
+  transition: color 0.7s; /*Rengi kontrol et*/
+}
+
+/* .nav-link.active:hover {
+  color: green !important;
+} */
+
+.nav-link.active:hover {
+  color: var(--red) !important;  /*important ile ezebiliriz duruma göre */
+}
+
+.nav-link:hover {
+  color: var(--red);
+}
+
+/*! ------------- 2- CAROUSEL --------------- */
+.carousel-item {
+  max-height: calc(100vh - 93px); /*Resimin boyutunu ayarlarız.Sınır çizeriz. calc ile navbar kısmından resim alanını çıkaralım*/
+}
+
+.carousel-caption .btn {
+  width: 7rem;
+  /* margin-bottom: 1rem; */
+}
+
+.carousel-caption h5 {
+  color: var(--red); /*var ile red rengini çekeriz*/
+  font-size: 2.4rem;
+  text-shadow: 3px 3px 3px black; /*yazıların gölgesini ayarlarız*/
+}
+
+.carousel-caption p {
+  text-shadow: 3px 3px 3px black;
+  font-weight: 600;
+}
+
+.carousel-caption {
+  bottom: 5rem;
+
+  /*! yatay ve dikey ortalama için transform kullanılabilir. */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.carousel-indicators {
+  gap: 0.7rem;
+}
+
+.carousel-indicators button {
+  background-color: var(--red) !important ;
+  padding: 0.1rem !important; /*Yükseklliğini ayarlarız*/
+  width: 3rem !important;
+  /* margin-right: 1rem !important; */
+}
+
+/*! ------------ 3- ABOUT SECTION ----------- */
+
+/*! ------------- 4- INSTRUCTORS -------------*/
+
+/*! ----------- 4- STUDENTS SECTION ----------*/
+
+/*! ----------- 5- COURSES SECTION ----------- */
+
+/*! ----------- 6- CONTACT SECTION ------------ */
+
+/*! --------------- 7- FOOTER ----------------- */
